@@ -6,3 +6,7 @@ variable "trigger_attempt" {
   type    = number
   default = 1
 }
+
+# Bump to trigger a fresh webhook ingestion that snapshots the workspace's
+# sparse_checkout_pattern (/terraform-test/) into the new config version's
+# ingress_attributes, so the agent sparse-checkouts and packs only this dir.
