@@ -4,7 +4,7 @@
 # should exceed the 4 GiB cap during ingestion and fail the run.
 variable "trigger_attempt" {
   type    = number
-  default = 2
+  default = 3
 }
 
 # Bump to trigger a fresh webhook ingestion that snapshots the workspace's
